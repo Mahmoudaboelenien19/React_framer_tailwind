@@ -1,3 +1,4 @@
+import Cars from "./Cars/Cars";
 import Nav from "./Nav/Nav";
 import Hero from "./hero/Hero";
 
@@ -6,6 +7,7 @@ const Home = () => {
     <div className="container">
       <Nav />
       <Hero />
+      <Cars />
     </div>
   );
 };
