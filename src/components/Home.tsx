@@ -1,10 +1,9 @@
-import React from "react";
 import Nav from "./Nav/Nav";
 import Hero from "./hero/Hero";
 
 const Home = () => {
   return (
-    <div>
+    <div className="container">
       <Nav />
       <Hero />
     </div>

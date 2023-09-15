@@ -6,6 +6,12 @@ export default {
   ],
   darkMode: "class",
   theme: {
+    colors: {
+      mainRed: "#B21E01",
+      mainDark: "#000000",
+      mainWhite: "#fff"
+
+    },
 
     extend: {},
   },

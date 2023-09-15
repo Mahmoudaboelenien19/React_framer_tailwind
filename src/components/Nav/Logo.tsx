@@ -12,7 +12,7 @@ const Logo = ({ fill, scale }: Props) => {
       viewBox="0 0 194 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="origin-left  transition"
+      className="origin-left  transition  "
     >
       <path
         d="M22.8638 54.273L31.881 36.2386C31.9301 36.1405 32.0704 36.1405 32.1194 36.2386L41.1365 54.273C41.1957 54.3909 41.0658 54.5138 40.9512 54.4485L32.0664 49.3714C32.0253 49.348 31.9752 49.348 31.9341 49.3714L23.0493 54.4485C22.9347 54.5138 22.8048 54.3909 22.8638 54.273Z"

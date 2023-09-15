@@ -12,7 +12,7 @@ const useNavTransition = <T extends HTMLElement>() => {
   const navClr = useTransform(
     scrollY,
     [0, 0.5],
-    [!theme ? "#fffff00" : "#0000000", theme ? "#fff" : "#000"]
+    [!theme ? "#fff" : "#000", theme ? "#fff" : "#000"]
   );
 
   const LinkClr = useTransform(
@@ -26,7 +26,7 @@ const useNavTransition = <T extends HTMLElement>() => {
     ["0 0 0 000", ".5px .5px 1.5px 000"]
   );
 
-  const scale = useTransform(scrollY, [0, 0.5], [1, 0.75]);
+  const scale = useTransform(scrollY, [0, 0.5], [0.6, 0.5]);
   return { navRef, navClr, LinkClr, boxShadow, scale };
 };
 

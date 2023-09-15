@@ -19,7 +19,7 @@ const Nav = () => {
     <motion.nav
       ref={navRef}
       style={{ backgroundColor: navClr, color: LinkClr, boxShadow }}
-      className="px-4 sticky top-0 left-0 w-full flex items-center justify-between cursor-pointer"
+      className="px-4 fixed top-0 left-0 w-full flex items-center justify-between cursor-pointer z-10"
     >
       <Link to="home">
         <Logo fill={LinkClr} scale={scale} />
@@ -32,7 +32,7 @@ const Nav = () => {
             smooth
             spy
             className="hover:text-yellow-50"
-            activeClass="text-green-500"
+            activeClass="text-mainRed"
             to={link}
           >
             {name}
