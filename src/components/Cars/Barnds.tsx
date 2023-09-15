@@ -9,14 +9,10 @@ import { ReactSVG } from "react-svg";
 const BrandsArr = [Audi, Bmw, Mazada, Ford, mercedes, skoda, Vw];
 const Barnds = () => {
   return (
-    <div className=" flex flex-wrap  justify-center  w-full  md:w-5/6 gap-3 md:gap-14 lg:gap-24  ">
+    <div className="  flex flex-wrap  justify-center mx-auto  w-full  md:w-5/6 gap-3 md:gap-14   ">
       {BrandsArr.map((brand: string, i) => {
         return (
-          <ReactSVG
-            src={brand}
-            className="scale-100 md:scale-150 lg:scale-[2]"
-            key={i}
-          />
+          <ReactSVG src={brand} className="scale-100 md:scale-125 " key={i} />
         );
       })}
     </div>
