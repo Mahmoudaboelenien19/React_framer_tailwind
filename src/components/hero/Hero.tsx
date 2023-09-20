@@ -1,16 +1,17 @@
+import Container from "../widgets/Container";
 import HeroImage from "./HeroImage";
 import HeroText from "./HeroText";
 
 const Hero = () => {
   return (
-    <div
+    <Container
       id="home"
-      className="h-screen pt-16 flex  flex-col md:flex-row   justify-between items-center w-full 
+      className=" flex  flex-col md:flex-row   justify-between items-center
       "
     >
       <HeroText />
       <HeroImage />
-    </div>
+    </Container>
   );
 };
 

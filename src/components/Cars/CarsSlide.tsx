@@ -1,17 +1,16 @@
-import { CarType } from "../../types";
-import { cars } from "../../utils/arr";
 import Car from "./Car";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import { Autoplay } from "swiper/modules";
 
 import "swiper/css/autoplay";
+import { CarType } from "@/types";
+import { cars } from "@/utils/arr";
 const CarsSlide = () => {
   return (
     <Swiper
       loop
       className="w-full mt-12 "
-      spaceBetween={15}
       direction="horizontal"
       modules={[Autoplay]}
       autoplay={{
@@ -22,14 +21,17 @@ const CarsSlide = () => {
       breakpoints={{
         1: {
           slidesPerView: 1,
+          spaceBetween: 5,
         },
-        500: {
-          slidesPerView: 2,
-        },
+        // 500: {
+        //   slidesPerView: 2,
+        // },
         768: {
           slidesPerView: 2,
+          spaceBetween: 10,
         },
         1024: {
+          spaceBetween: 15,
           slidesPerView: 3,
         },
       }}

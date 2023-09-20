@@ -1,5 +1,5 @@
+import { Children } from "@/types";
 import React, { createContext, useEffect, useState } from "react";
-import { Children } from "../../types";
 
 interface themeInterface {
   theme: boolean;

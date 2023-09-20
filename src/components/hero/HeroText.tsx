@@ -2,8 +2,8 @@ import Button from "../widgets/Button";
 
 const HeroText = () => {
   return (
-    <div className="w-3/8 max-w-[500px] flex flex-col  gap-4  p-4 mt-8 md:0">
-      <h1 className="text-4xl lg:text-5xl font-bold  dark:text-mainWhite ">
+    <div className="w-3/8  lg:w-1/2 flex flex-col  gap-4   mt-20 md:mt-0  ">
+      <h1 className="text-4xl lg:text-7xl font-bold  dark:text-mainWhite ">
         Explore the Finest
         <p>
           <span className="text-mainRed">Global</span> Offers

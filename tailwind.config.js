@@ -6,14 +6,21 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    colors: {
-      mainRed: "#B21E01",
-      mainDark: "#000000",
-      mainWhite: "#fff"
-
+    container: {
+      center: true
     },
 
-    extend: {},
+
+    extend: {
+      colors: {
+
+
+        mainRed: "#B21E01",
+        mainDark: "#000000",
+        mainWhite: "#fff"
+
+      },
+    },
   },
   plugins: [],
 }
