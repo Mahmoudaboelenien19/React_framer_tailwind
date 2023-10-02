@@ -20,8 +20,17 @@ export default {
         mainWhite: "#fff"
 
       },
-    },
+
+      fontFamily: {
+        "roboto": "'Roboto' , sans-serif",
+        "sofia": "'Sofia Sans', sans-serif"
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+
+    require( 'tailwind-scrollbar' )( { nocompatible: true } ),
+    require( 'tailwindcss-text-balance' ),
+  ],
 }
 

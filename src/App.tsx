@@ -4,10 +4,9 @@ import ThemeContextProvider from "./components/context/themeContext";
 function App() {
   return (
     <ThemeContextProvider>
-      <div className="  bg-white dark:bg-mainDark  ">
+      <div className="  bg-white dark:bg-mainDark ">
         <Home />
       </div>
-      ;
     </ThemeContextProvider>
   );
 }

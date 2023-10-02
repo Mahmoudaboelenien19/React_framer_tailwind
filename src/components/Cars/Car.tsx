@@ -3,7 +3,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import ReactStars from "react-stars";
 const Car = ({ type, name, price, stars, image, info }: CarType) => {
   return (
-    <div className=" flex flex-col gap-2  px-8 ">
+    <div className=" flex flex-col gap-2  sm:px-8 max-w-md mx-auto">
       <div className="flex  justify-center items-center ">
         <LazyLoadImage
           src={image}

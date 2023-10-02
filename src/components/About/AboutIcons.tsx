@@ -1,9 +1,11 @@
+import { useRef } from "react";
 import {
   MdOutlineBuildCircle,
   MdOutlineDirectionsCar,
   MdOutlineMapsHomeWork,
 } from "react-icons/md";
-
+import CountUp from "react-countup";
+import { useInView } from "framer-motion";
 const AboutArr = [
   {
     Icon: <MdOutlineDirectionsCar className="w-full h-full" />,
@@ -22,21 +24,22 @@ const AboutArr = [
   },
 ];
 const AboutIcons = () => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const inView = useInView(ref, { once: false, amount: 0.8 });
   return (
-    <div className="flex  gap-20 w-3/4 justify-center">
+    <div className="flex  gap-20 w-3/4 justify-center" ref={ref}>
       {AboutArr.map(({ Icon, num, text }, index) => {
         return (
-          <div
-            key={index}
-            className="text-mainDark flex flex-col h-28 items-center"
-          >
+          <div key={index} className="txt flex flex-col h-28 items-center">
             <div className="w-10 h-10 text-mainRed">{Icon}</div>
-            <h1 className="text-mainBlack dark:text-mainWhite text-2xl font-black">
-              {num}
-            </h1>
-            <p className="capitalize text-center w-10 opacity-60  text-mainBlack dark:text-mainWhite">
-              {text}
-            </p>
+            {inView && (
+              <CountUp
+                end={num}
+                duration={500 / num}
+                className="txt text-2xl font-black"
+              />
+            )}
+            <p className="capitalize text-center w-10 opacity-60 txt">{text}</p>
           </div>
         );
       })}

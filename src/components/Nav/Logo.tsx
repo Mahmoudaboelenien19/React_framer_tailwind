@@ -1,7 +1,7 @@
 import { MotionValue, motion } from "framer-motion";
 type Props = {
-  fill: MotionValue;
-  scale: MotionValue;
+  fill: MotionValue | string;
+  scale: MotionValue | number;
 };
 const Logo = ({ fill, scale }: Props) => {
   return (

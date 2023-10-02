@@ -9,7 +9,7 @@ const Button = ({ btn, className, fn }: Props) => {
   return (
     <button
       className={clsx(
-        "text-mainWhite  rounded bg-mainRed  p-4 px-8 text-bold  hover:opacity-90",
+        "text-mainWhite w-full md:w-fit   rounded bg-mainRed  p-4 px-8 text-bold  hover:opacity-90",
         className
       )}
       onClick={fn}

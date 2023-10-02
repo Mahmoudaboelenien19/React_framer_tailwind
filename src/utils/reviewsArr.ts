@@ -6,31 +6,31 @@ import image5 from "@/assets/images/reviews/5.jpg";
 export const reviewsArr = [
   {
     review:
-      "Working with this person was an absolute pleasure! I highly recommend them.",
+      "I've had no issues with this app. It's reliable, easy to use, and has a good selection of cars.",
     name: "John Doe",
     img: image1,
   },
   {
     review:
-      "I'm incredibly impressed with the skills and professionalism of this individual. I wouldn't hesitate to work with them again.",
+      "I always find the best deals on this app. The renting experience has been smooth and enjoyable.",
     name: "Jane Smith",
     img: image2,
   },
   {
     review:
-      "It was a delight to collaborate with this person. They have exceptional creativity and problem-solving abilities",
+      "The app has a wide range of cars at affordable prices. Easy booking process and good customer support.",
     name: "David Johnson",
     img: image3,
   },
   {
     review:
-      "I can't speak highly enough about this individual. They are not only talented but also reliable and efficient.",
+      "This app makes renting cars a breeze. It's fast, user-friendly, and offers reliable service. Highly recommended!",
     name: "Sarah Wilson",
     img: image4,
   },
   {
     review:
-      "Their expertise and dedication are evident in every aspect of their work.",
+      "This app is super convenient and efficient. It saved me time and effort when renting a car. Love it!",
     name: "Michael Thompson",
     img: image5,
   },

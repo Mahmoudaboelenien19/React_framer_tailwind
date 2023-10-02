@@ -15,7 +15,7 @@ const TestmonialsSlider = () => {
   return (
     <Swiper
       loop
-      slidesPerView={1.5}
+      slidesPerView={1.6}
       direction="vertical"
       pagination={{ clickable: true }}
       modules={[Pagination, Autoplay]}

@@ -1,12 +1,12 @@
 import { Children } from "@/types";
-import React, { createContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import { createContext } from "react";
 
 interface themeInterface {
   theme: boolean;
   setTheme: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export const themeContext = createContext({} as themeInterface);
-
 const ThemeContextProvider = ({ children }: Children) => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") === "dark" ? true : false

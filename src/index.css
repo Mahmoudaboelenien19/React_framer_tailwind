@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .txt {
+    @apply text-mainDark dark:text-mainWhite;
+  }
+}
+
+.swiper-pagination-bullet {
+  @apply !bg-mainDark dark:!bg-mainWhite;
+}

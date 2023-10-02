@@ -8,7 +8,10 @@ type Props = {
 
 const Container = ({ className, children, id }: Props) => {
   return (
-    <div className={clsx("container p-6 min-h-screen    ", className)} id={id}>
+    <div
+      className={clsx("container p-4 md:p-6 min-h-screen     ", className)}
+      id={id}
+    >
       {children}
     </div>
   );

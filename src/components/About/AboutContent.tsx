@@ -1,14 +1,22 @@
+import { fadeIn } from "@/utils/variants";
 import Button from "../widgets/Button";
 import AboutIcons from "./AboutIcons";
+import { motion } from "framer-motion";
 
 const AboutContent = () => {
   return (
-    <div className="flex flex-col gap-8 justify-center items-center">
-      <h1 className="text-4xl font-bold text-mainDark dark:text-mainWhite capitalize gap-4">
+    <motion.div
+      variants={fadeIn("down", 0.6)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="flex flex-col gap-8 justify-center items-center"
+    >
+      <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold txt capitalize gap-4 whitespace-nowrap">
         car services
         <span className="text-mainRed"> simplified.</span>
       </h1>
-      <p className="w-3/4 text-mainDark dark:text-mainWhite opacity-70">
+      <p className=" txt w-5/6  opacity-70 text-center">
         Rent, choose, and repair with ease. Our convenient locations, diverse
         car types, and reliable repair points ensure a seamless car experience.
       </p>
@@ -19,7 +27,7 @@ const AboutContent = () => {
         fn={() => null}
         className="w-fit px-20 mx-auto"
       />
-    </div>
+    </motion.div>
   );
 };
 

@@ -12,7 +12,7 @@ export const linksArr = [
   { link: "cars", name: "Cars" },
   { link: "about", name: "About" },
   { link: "why", name: "Why us" },
-  { link: "testmonials", name: "Testmonials" },
+  { link: "testimonials", name: "Testmonials" },
   { link: "download", name: "Download" },
 ];
 

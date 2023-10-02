@@ -5,7 +5,7 @@ const Testimonials = () => {
   return (
     <Container
       id="testimonials"
-      className=" w-full  overflow-hidden !p-0 flex items-center "
+      className=" w-fit  overflow-hidden !p-0 flex items-center "
     >
       <TestmonialsSlider />
     </Container>

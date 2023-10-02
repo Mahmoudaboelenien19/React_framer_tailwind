@@ -10,7 +10,7 @@ const CarsSlide = () => {
   return (
     <Swiper
       loop
-      className="w-full mt-12 "
+      className="w-full h-5/6  "
       direction="horizontal"
       modules={[Autoplay]}
       autoplay={{

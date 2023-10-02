@@ -11,7 +11,7 @@ const Review = ({ img, name, review, isActive }: Props) => {
   return (
     <motion.div
       className={clsx(
-        "h-72 md:h-48 max-w-3xl flex flex-col md:flex-row  items-center  gap-4 md:gap-8  p-6 rounded transition w-10/12 mx-auto bg-gray-200",
+        "h-[300px] md:h-48 max-w-4xl flex flex-col md:flex-row  items-center  gap-4 md:gap-8  p-6 rounded transition w-10/12 mx-auto bg-gray-500 text-mainWhite",
 
         !isActive && "scale-90 blur-sm"
       )}
@@ -29,7 +29,9 @@ const Review = ({ img, name, review, isActive }: Props) => {
       </div>
       <div className="pt-0  md:pt-8 flex flex-col justify-between h-full opacity-60">
         <p>{review}</p>
-        <div className="font-bold w-full text-right md:text-left">{name}</div>
+        <div className="font-bold w-full text-right md:text-left mt-1">
+          {name}
+        </div>
       </div>
     </motion.div>
   );

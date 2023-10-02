@@ -3,22 +3,30 @@ import Container from "../widgets/Container";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import img from "../../assets/images/why/car.png";
 import Whysrrvices from "./Whysrrvices";
+import { fadeIn } from "@/utils/variants";
+import { motion } from "framer-motion";
 const Why = () => {
   return (
     <Container
-      className="flex  justify-center flex-col items-center gap-2"
+      className="flex  justify-center flex-col items-center gap-2  "
       id="why"
     >
       <WhyHead />
-      <div className="h-72 ">
+      <motion.div
+        className="h-72  my-4"
+        variants={fadeIn("up", 0.6)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.6 }}
+      >
         <LazyLoadImage
           src={img}
           alt=""
           effect="blur"
-          wrapperClassName="h-full "
+          wrapperClassName="h-full my-4"
           className="h-full object-contain "
         />
-      </div>
+      </motion.div>
       <Whysrrvices />
     </Container>
   );

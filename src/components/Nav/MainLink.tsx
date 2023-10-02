@@ -11,9 +11,11 @@ const MainLink = ({ link, name, className, ...props }: Props) => {
   return (
     <Link
       smooth
+      offset={0}
       spy
-      className={clsx("hover:text-mainRed hover:opacity-60 ", className)}
-      activeClass="!text-mainRed font-bold  hover:opacity-100"
+      spyThrottle={-50}
+      className={clsx("hover:text-mainRed hover:opacity-80 ", className)}
+      activeClass="!text-mainRed font-bold  hover:!opacity-100"
       to={link}
       {...props}
     >
