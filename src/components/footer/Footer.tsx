@@ -7,7 +7,7 @@ import WorkingHours from "./WorkingHours";
 
 const Footer = () => {
   return (
-    <div
+    <footer
       className="text-white mt-8 bg-gray-600 p-8 pb-0"
       id="
     "
@@ -24,7 +24,7 @@ const Footer = () => {
         <NwesLetter />
       </motion.div>
       <CopyRight />
-    </div>
+    </footer>
   );
 };
 

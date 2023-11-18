@@ -20,7 +20,7 @@ const DownloadContent = () => {
 
       <motion.p
         className="my-4 opacity-60 whitespace-break-spaces "
-        variants={fadeIn("right", 0.5)}
+        variants={fadeIn("right", 0.5, 0.7)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.6 }}

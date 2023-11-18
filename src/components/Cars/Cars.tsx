@@ -6,7 +6,7 @@ import Container from "../widgets/Container";
 const Cars = () => {
   return (
     <Container
-      className="max-w-screen !py-28 md:!py-12  mx-auto flex flex-col justify-between items-center "
+      className="max-w-screen !py-24 md:!py-20  mx-auto flex flex-col justify-between items-center "
       id="cars"
     >
       <motion.h1

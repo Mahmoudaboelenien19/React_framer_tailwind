@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <Container
       id="home"
-      className=" flex  flex-col   justify-center items-center   gap-10 h-screen  
+      className=" flex  flex-col   justify-center items-center   gap-10   
       "
     >
       <div className=" h-[70vh] flex   w-full gap-10 flex-col md:flex-row   justify-between items-end   ">

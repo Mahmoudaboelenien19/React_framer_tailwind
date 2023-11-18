@@ -11,3 +11,22 @@
 .swiper-pagination-bullet {
   @apply !bg-mainDark dark:!bg-mainWhite;
 }
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.cont {
+  scroll-snap-align: start;
+  scroll-padding-top: 20px;
+}
+
+footer {
+  scroll-snap-align: end;
+}
+
+@media (max-width: 850px) {
+  html {
+    scroll-snap-type: none;
+  }
+}

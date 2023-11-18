@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 const Why = () => {
   return (
     <Container
-      className="flex  justify-center flex-col items-center gap-2  "
+      className="flex  justify-center flex-col items-center gap-2  !py-16 "
       id="why"
     >
       <WhyHead />
       <motion.div
-        className="h-72  my-4"
+        className="h-64  my-4"
         variants={fadeIn("up", 0.6)}
         initial="hidden"
         whileInView="show"

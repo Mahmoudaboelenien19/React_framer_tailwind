@@ -16,13 +16,14 @@ const Barnds = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.4 }}
-      className="  flex flex-wrap  justify-center mx-auto  w-full  md:w-5/6 gap-3 md:gap-14   mt-4 "
+      className=" sm:[display:none] md:flex flex-wrap  justify-center mx-auto  w-full  md:w-full gap-3 md:gap-14   mt-4  "
     >
       {BrandsArr.map((brand: string, i) => {
         return (
           <LazyLoadImage
             src={brand}
-            className="scale-100 md:scale-125   opacity-60"
+            wrapperClassName="w-12  "
+            className="w-full h-full opacity-60"
             key={i}
           />
         );

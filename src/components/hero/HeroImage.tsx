@@ -7,7 +7,7 @@ import { fadeIn } from "@/utils/variants";
 const HeroImage = () => {
   return (
     <motion.div
-      className="h-5/6 placeholder:w-full md:w-1/2"
+      className="h-5/6 sm:w-5/6 md:w-1/2 mx-auto"
       variants={fadeIn("up", 0.3)}
       initial="hidden"
       whileInView="show"

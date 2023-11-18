@@ -8,7 +8,7 @@ const Download = () => {
   return (
     <Container
       id="download"
-      className="flex flex-col-reverse md:flex-row justify-center items-center gap:16  lg:gap-[200px] h-auto  md:h-screen  "
+      className="flex flex-col-reverse md:flex-row justify-center items-center gap:16  lg:gap-[200px]   "
     >
       <DownloadContent />
       <motion.div

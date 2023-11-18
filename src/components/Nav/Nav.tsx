@@ -25,7 +25,7 @@ const Nav = () => {
     <motion.nav
       ref={navRef}
       style={{ backgroundColor: navClr, color: LinkClr, boxShadow }}
-      className="px-4 fixed top-0 left-0 w-full flex items-center justify-between cursor-pointer z-10"
+      className="transition-[.3s] px-4 fixed top-0 left-0 w-full flex items-center justify-between cursor-pointer z-10"
     >
       <Link to="home">
         <Logo fill={LinkClr} scale={scale} />
